@@ -1,0 +1,397 @@
+/* this is the library of function for less*/
+/*function for padding*/
+/*function  for position*/
+/*function for font size*/
+/*function for  text color*/
+/*function for background color*/
+/*function for font-family*/
+/*function for decorate a link*/
+/*function for transform text*/
+/*css for nav bar*/
+.navigation {
+  width: 100%;
+  position: absolute;
+  background-color: #424c54;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  opacity: 0.8;
+}
+.navigation .logo a {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navigation .logo a:hover {
+  color: white;
+}
+.navigation .logo a:hover {
+  text-decoration: none;
+}
+.navigation .nav-menu {
+  text-transform: uppercase;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.navigation .nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+.navigation .nav-menu li {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.navigation .nav-menu li:hover {
+  border: 1px solid #4bcaff;
+}
+.navigation .nav-menu li:hover a {
+  color: #4bcaff;
+}
+/*css for logo text*/
+/*-------------css for the common function when hover a link-----------------*/
+/*--------------------------------------------------------------*/
+/*css for menu*/
+/*--------------function is used to css for the same list style--------------*/
+/*----------------------------*/
+/*--------------function is used to css for a*/
+/*----------function use to css for service and twitter block because it have the same style-----*/
+/*--------------------------------------------------------------------------------------------*/
+/*-------------function used to css for the same title h1*/
+/*--------------------------------------------------------------------------------------------*/
+/*----------------css for the item have the same style-------------------*/
+/*--------------------------------------------------------------------------------------------*/
+/*end of this function*/
+/*css for services*/
+.services {
+  background-color: #4bcaff;
+  color: white;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.services .sv-title h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.services .sv-item {
+  margin-top: 50;
+  margin-right: 0;
+  margin-bottom: 50;
+  margin-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+.services .sv-item h2 {
+  font-size: 24;
+  text-transform: uppercase;
+}
+.services .sv-item p {
+  font-size: 12;
+}
+/*end of css for services*/
+/*css for portfolio*/
+.portfolio {
+  background-color: #fff;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.portfolio .title {
+  color: #515f67;
+}
+.portfolio .title h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.portfolio .fifler li {
+  display: inline-block;
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 25px;
+}
+.portfolio .fifler li:hover {
+  border: 1px solid #4bcaff;
+}
+.portfolio .fifler li:hover a {
+  color: #4bcaff;
+}
+.portfolio .fifler a {
+  color: #69747b;
+}
+.portfolio .fifler a:hover {
+  text-decoration: none;
+}
+.portfolio .row {
+  margin-top: 30px;
+  left: 0;
+}
+.portfolio .row .box {
+  position: relative;
+}
+.portfolio .row .box img {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.portfolio .row .box::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #444d54;
+  position: absolute;
+  opacity: 0.8;
+  display: none;
+}
+.portfolio .row .box:hover:before {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-left: 15px;
+}
+.portfolio .row .box:hover .inner {
+  display: block;
+}
+.portfolio .row .inner {
+  position: absolute;
+  top: 120px;
+  left: 125px;
+  display: none;
+}
+.portfolio .row .inner i {
+  color: white;
+  font-size: 30px;
+}
+/*end of css for portfolio*/
+/*css for section*/
+.section {
+  background-color: #515f67;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.section .left h1 {
+  color: white;
+  text-transform: uppercase;
+}
+.section .left h1 h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.section .left p {
+  font-size: 14px;
+  color: white;
+  line-weight: 200%;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+.section .left a {
+  height: 20%;
+  width: 40%;
+  border: 1px solid #353f46;
+  padding-top: 20;
+  padding-right: 50;
+  padding-bottom: 20;
+  padding-left: 50;
+  font-size: 14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #353f46;
+  text-decoration: none;
+}
+.section .left a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+}
+.section .left a:hover:hover {
+  text-decoration: none;
+}
+.section iframe {
+  width: 95%;
+  height: 360px;
+  margin-top: 25px;
+}
+/*end of css for section*/
+/*css for twitter*/
+.twitter {
+  margin-top: 0px;
+  background-color: #4bcaff;
+  color: white;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.twitter .twitter-title h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.twitter .twitter-title p {
+  font-size: 28;
+  margin-top: 30px;
+}
+.twitter .img-twitter {
+  font-size: 30px;
+  margin-top: 20px;
+}
+/*css for who is*/
+.whois {
+  background: url("images/img10.jpg") center center / cover;
+  color: #fff;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.whois p {
+  margin-top: 30px;
+}
+.whois .right-box p {
+  margin-top: 100px;
+}
+.whois .right-box .icon li {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 2px;
+  padding-top: 20;
+  padding-right: 20;
+  padding-bottom: 20;
+  padding-left: 20;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.whois .right-box .icon i {
+  font-size: 30px;
+}
+/*css for testimonials*/
+.testi {
+  color: #899196;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.testi h1 h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.testi p {
+  font-size: 28px;
+  margin-top: 30px;
+}
+.testi span {
+  color: #4bcaff;
+  font-size: 14;
+}
+.testi .img-testi i {
+  font-size: 32px;
+  color: #515f67;
+  margin-top: 30px;
+}
+/*css for contact*/
+.contact {
+  background: url("images/contact.jpg") center center / cover;
+  color: #dfe1e2;
+  padding-top: 30;
+  padding-right: 0;
+  padding-bottom: 30;
+  padding-left: 0;
+}
+.contact h1 h1 {
+  font-size: 30;
+  text-transform: uppercase;
+}
+.contact p {
+  font-size: 14;
+  margin-top: 50;
+  margin-right: 0;
+  margin-bottom: 10;
+  margin-left: 0;
+}
+.contact form .border {
+  border: 2px solid white;
+  width: 80%;
+  height: 60px;
+}
+.contact form .input {
+  margin-bottom: 50px;
+  opacity: 0.1;
+  width: 100%;
+  height: 60px;
+}
+.contact form label {
+  text-transform: uppercase;
+  font-size: 14;
+  margin-top: 30px;
+}
+.contact .message {
+  margin-top: -40px;
+}
+.contact .message .border-m {
+  border: 2px solid white;
+  width: 100%;
+  height: 210px;
+}
+.contact .message .sub-form label {
+  margin-top: 50px;
+}
+.contact .message .sub-form input {
+  width: 100%;
+  height: 210px;
+  opacity: 0.1;
+}
+.contact .submit {
+  margin-top: 30px;
+}
+.contact .submit input {
+  width: 100%;
+  height: 56px;
+  background-color: #4bcaff;
+}
+/*end of css for contact*/
+/*css for footer here*/
+.footer {
+  background-color: #293239;
+  opacity: 0.9;
+}
+.footer p {
+  margin-top: 70;
+  margin-right: 0;
+  margin-bottom: 70;
+  margin-left: -20;
+
+  color: #fff;
+  opacity: 0.4;
+}
+.footer p a {
+  text-transform: uppercase;
+  font-size: 12;
+  color: #fff;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+.footer .ft-right {
+  float: right;
+  margin-top: 10px;
+}
+/*end of css for footer*/

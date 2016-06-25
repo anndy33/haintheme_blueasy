@@ -1,0 +1,448 @@
+
+@import "function.less";
+
+body{
+	
+
+}
+@text-color: white;
+@transform : uppercase;
+@blue-color: #4bcaff;
+@nounderline: none;
+/*css for nav bar*/
+.navigation{
+		width: 100%;
+		position: absolute;
+		.bgcolor(#424c54);
+		.padding(20px,100px,25px,100px);
+		opacity: 0.8;
+		.logo{
+
+				a{
+				.fontsize(30px);
+				.color(@text-color);
+				&:hover{
+					.color(@text-color);
+				}
+				.hover-a();
+
+			}
+
+
+		}
+
+		.nav-menu {
+		text-transform: @transform;
+		padding-left: 0;
+		margin-top: 10px;
+
+			a{
+				text-decoration: @nounderline;
+					color: @text-color;
+			}
+			li {
+
+				.fontsize(14px);
+				.list-style();
+				
+			}
+			
+
+		}
+		
+			
+			
+}
+
+
+
+	/*css for logo text*/
+	/*-------------css for the common function when hover a link-----------------*/
+	.hover-a(){
+		text-transform: @transform;
+		.decorate(none);
+		&:hover{
+				.decorate(none);
+				
+			}
+	}
+	/*--------------------------------------------------------------*/
+
+	
+	/*css for menu*/
+	/*--------------function is used to css for the same list style--------------*/
+		.list-style(){
+			display: inline-block;
+			margin-right: 15px;
+			.padding(5px,10px,5px,10px);
+			text-transform: @transform;
+			&:hover { 
+				border: 1px solid @blue-color;
+				a{
+					color: @blue-color;
+				}
+
+			}
+		}
+		/*----------------------------*/
+		/*--------------function is used to css for a*/
+
+	
+
+/*----------function use to css for service and twitter block because it have the same style-----*/
+.common-block (){
+	
+	.padding(30,0,30,0);
+}
+/*--------------------------------------------------------------------------------------------*/
+/*-------------function used to css for the same title h1*/
+.common-h1  (){
+	h1{
+			.fontsize(30);
+			text-transform: @transform;
+
+		}
+}
+/*--------------------------------------------------------------------------------------------*/
+/*----------------css for the item have the same style-------------------*/
+
+
+.common-item (){
+	.margin(50,0,50,0);
+	display: inline-block;
+	text-align: left;
+	h2{
+		.fontsize(24);
+		text-transform: @transform;
+	}
+	p{
+		.fontsize(12);
+
+	}
+}
+/*--------------------------------------------------------------------------------------------*/
+
+/*end of this function*/
+/*css for services*/
+.services {
+		.bgcolor(@blue-color);
+		.color(@text-color);
+		.common-block();
+
+	.sv-title{
+		.common-h1();
+	}
+	.sv-item{
+		
+		.common-item();
+
+	
+	}
+}
+/*end of css for services*/
+/*css for portfolio*/
+
+.portfolio{
+
+	.bgcolor(#fff);
+	.common-block();
+	
+	
+	.title{
+		.common-h1();
+		color: #515f67;
+		
+
+	}
+	.fifler{
+		li{
+			.list-style();
+			font-size: 14px;
+			margin-top: 25px;
+			
+		}
+		a{
+			color: #69747b;
+			&:hover{
+				.decorate(none);
+			}
+		}
+		
+	}
+	.row{
+		margin-top: 30px;
+		left: 0;
+		.box{
+			.position(relative);
+			
+			img{
+			width: 250px;
+			height: 250px;
+			text-align: center;
+			}
+		}
+		.box::before{
+			 content : "";
+			 top:0;
+			 bottom:0;
+			 left:0;
+			 right:0;
+			 .bgcolor(#444d54);
+			 .position(absolute);
+			 opacity: 0.8;
+			 display:none;
+			
+		}
+		.box:hover:before{
+		 display:block;
+		 width: 250px;
+		height: 250px;
+		margin-left: 15px;
+	
+		}
+		.box:hover .inner{display:block;}
+			.inner{
+				i{
+					color: white;
+					font-size: 30px;
+
+				}
+
+			 
+			 .position(absolute);
+			 top:120px;
+			 left:125px;
+			display:none;
+			}
+	}
+}
+/*end of css for portfolio*/
+/*css for section*/
+.section{
+	background-color: #515f67;
+	.common-block();
+	.left{
+		h1{
+		.common-h1();
+		color: @text-color;
+		text-transform: @transform;
+	
+		}
+		p{
+			font-size: 14px;
+			color: @text-color;
+			line-weight: 200%;
+			margin-top: 30px;
+			margin-bottom: 120px;
+		}
+		a{
+			height: 20%;
+			width: 40%;
+			border: 1px solid #353f46;
+			.padding(20,50,20,50);
+			text-align: center;
+			.fontsize(14);
+			text-transform: @transform;
+			text-align: center;
+			color: #353f46;
+			.decorate(none);
+			&:hover{
+				.hover-a();
+					border: 1px solid black;
+					color: black;
+
+			}
+			
+		}
+	}
+	iframe{
+		width: 95%;
+		height:360px;
+		margin-top: 25px; 
+	}
+	
+
+	
+}
+/*end of css for section*/
+/*css for twitter*/
+.twitter{
+	margin-top: 0px;
+	.bgcolor(@blue-color);
+		.color(@text-color);
+		.common-block();
+	.common-block();
+
+	.twitter-title{
+		
+		.common-h1();
+		p{
+			.fontsize(28);
+			margin-top: 30px;
+		 
+		}
+	}
+	.img-twitter{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+		
+}
+/*css for who is*/
+.whois{
+	background: url("images/img10.jpg") center center /cover;
+	
+	.color(#fff);
+	.common-block();
+	p{
+		margin-top: 30px;
+	}
+
+	.right-box{
+		p{
+			margin-top: 100px;
+		}
+		.icon{
+			li{
+				display: inline-block;
+				border: 2px solid white;
+				border-radius: 2px;
+				.padding(20,20,20,20);
+				text-align: center;
+				margin-right: 20px;
+				margin-top: 20px;
+
+			}
+			i{
+				font-size: 30px;
+
+			}
+			
+			
+	}
+}
+}
+/*css for testimonials*/
+
+.testi {
+	.color(#899196);
+	.common-block();
+	h1{
+		.common-h1();
+
+	}
+	p{
+		font-size: 28px;
+		margin-top: 30px;
+	}
+	span{
+		.color(#4bcaff);
+		.fontsize(14);
+	}
+	.img-testi i{
+		font-size: 32px;
+		.color(#515f67);
+		margin-top: 30px;
+	}
+	
+}
+/*css for contact*/
+.contact{
+	background: url("images/contact.jpg") center center /cover;
+	.color(#dfe1e2);
+	.common-block();
+	h1{
+		.common-h1();
+
+
+	}	
+	p{
+		.fontsize(14);
+		.margin(50,0,10,0);
+	}
+
+
+	 form {
+	 	
+
+		.border{
+			border: 2px solid white;
+			width: 80%;
+	 		height: 60px;
+		}
+
+
+	 	.input{
+	 	
+	 		margin-bottom: 50px;
+	 		opacity: 0.1;
+	 		width: 100%;
+	 		height: 60px;
+
+	 		
+	 	}
+	 	label{
+	 		text-transform: uppercase;
+	 		.fontsize(14);
+	 		margin-top: 30px;
+	 	}
+	 }
+	 .message{
+	 		margin-top: -40px;
+	 		.border-m{
+				border: 2px solid white;
+				width: 100%;
+				height: 210px;		
+			
+		}
+	 	.sub-form{
+	 		label{
+	 			margin-top: 50px;
+	 		}
+	 		input{
+	 			width: 100%;
+	 			height: 210px;
+	 			opacity: 0.1;
+	 			
+	 			}
+	 		}
+	 }
+	 .submit{
+
+		margin-top: 30px;
+	 	input{
+
+	 			width: 100%;
+		 		height: 56px;
+		 		background-color: #4bcaff;
+
+
+
+	 	}
+	 
+	 }
+}
+/*end of css for contact*/
+/*css for footer here*/
+.footer{
+	background-color: #293239;
+	opacity: 0.9;
+	p{	
+		
+		.margin(70,0,70,-20);
+		.color(#fff);
+		opacity: 0.4;
+		a{
+			text-transform: uppercase;
+			.fontsize(12);
+			.color(#fff);
+				margin-right: 20px;
+				padding-left: 20px;
+		}
+	}
+	.ft-right{
+		float: right;
+		margin-top: 10px;
+	}
+}
+/*end of css for footer*/
