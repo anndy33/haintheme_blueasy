@@ -10,13 +10,11 @@
 /*css for nav bar*/
 .navigation {
   width: 100%;
-  position: absolute;
   background-color: #424c54;
   padding-top: 20px;
   padding-right: 100px;
   padding-bottom: 25px;
   padding-left: 100px;
-  opacity: 0.8;
 }
 .navigation .logo a {
   font-size: 30px;
@@ -69,6 +67,26 @@
 /*----------------css for the item have the same style-------------------*/
 /*--------------------------------------------------------------------------------------------*/
 /*end of this function*/
+/*css for slider*/
+/*css for slider*/
+.slider {
+  width: 100%;
+}
+.slider .item img {
+  width: 100%;
+  height: 800px;
+}
+.slider .carousel-caption {
+  text-transform: uppercase;
+  font-size: 40;
+  top: 240;
+}
+.slider .carousel-caption p {
+  background-color: #4a555c;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+/*end of css for slider*/
 /*css for services*/
 .services {
   background-color: #4bcaff;
@@ -379,7 +397,6 @@
   margin-right: 0;
   margin-bottom: 70;
   margin-left: -20;
-
   color: #fff;
   opacity: 0.4;
 }
